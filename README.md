@@ -1,17 +1,17 @@
 # Project-work
 
 ## Descrizione
-Applicazione full-stack con backend Laravel e frontend React/Vite per la gestione di utenti e ordini.
+Un progetto per un corso di web developer. Consiste nella homepage e in una pagini ordini in cui poter visualizzare
+gli ordini di un magazzino e poterne aggiungerne di nuovi, molto semplice.
 
 ## Struttura del progetto
-- `Backend/`: API Laravel, modello `User`, `Order`, migrazioni e logica business.
-- `frontend/`: SPA React con Vite, routing e componenti UI.
-- `Database.sql`: schema iniziale/seed dati.
+- `Backend`: API Laravel, migrazioni e logica business.
+- `frontend`: React con Vite, routing e componenti UI.
+- `Database.sql`: schema iniziale dati.
 
 ## Caratteristiche principali
-- Autenticazione utente (Laravel Sanctum o guard personalizzabile)
 - API REST per gestione ordini e risorse
-- Modelli Eloquent: `User`, `Order`
+- Modelli Eloquent: `Order`
 - Migrazioni e factory per test e dati demo
 
 ## Installazione locale
@@ -30,20 +30,7 @@ Applicazione full-stack con backend Laravel e frontend React/Vite per la gestion
 3. `npm run dev`
 4. aprire URL mostrato (es. `http://localhost:5173`)
 
-## Esecuzione test
-- Backend: `cd Backend && ./vendor/bin/phpunit`
-- Frontend: `cd frontend && npm test` (se configurato)
-
 ## Note utili
 - API nel file `Backend/routes/api.php`
 - Modelli in `Backend/app/Models`
 - Componenti e route React in `frontend/src/components` e `frontend/src/routes`
-
-## Contribuire
-1. creare branch: `git checkout -b feature/nome` 
-2. commit chiari e descrittivi
-3. inviare PR su main/master
-4. includere test e dettagli di funzionamento
-
-## Licenza
-Aggiungi qui la licenza del progetto (es. `MIT`, `GPL-3.0`, ecc.).
